@@ -53,16 +53,16 @@
 &kp ESC           &kp LS(NUMBER_1)   &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp DEL
 &kp CAPSLOCK      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &trans            &trans            &kp LG(D)           &kp MINUS         &kp EQUAL         &kp LBKT          &kp RBKT          &kp LESS_THAN     &kp GREATER_THAN
 &kp LEFT_CONTROL  &kp LA(LC(DEL))    &kp LC(LS(ESC))   &trans            &trans            &kp LA(F4)          &kp UNDER         &kp PLUS          &kp LBRC          &kp RBRC          &kp PAGE_DOWN     &kp PAGE_UP
-                                                       &kp LEFT_ALT      &to 3             &kp SPACE           &kp RET           &trans            &kp LEFT_WIN
+                                                       &kp LEFT_ALT      &tog 3            &kp SPACE           &kp RET           &trans            &kp LEFT_WIN
             >;
         };
 
         gaming_1 {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp A  &kp S  &kp D     &kp F  &kp G        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &trans  &trans  &trans  &trans  &trans  &trans
-                         &kp LALT  &mo 4  &kp SPACE    &trans  &to 0   &trans
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &none  &none   &none  &none  &none  &none
+&kp LSHFT  &kp A  &kp S  &kp D     &kp F  &kp G        &none  &none   &none  &none  &none  &none
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &none  &none   &none  &none  &none  &none
+                         &kp LALT  &mo 4  &kp SPACE    &none  &tog 0  &none
             >;
 
             label = "g1";
@@ -70,10 +70,10 @@
 
         gaming_2 {
             bindings = <
-&kp ESC    &kp N1  &kp W  &kp N2    &kp N3  &kp N4       &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp A   &kp S  &kp D     &kp N5  &kp N6       &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kt Q   &kt W  &kt E     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                          &kp LALT  &trans  &kp SPACE    &trans  &trans  &trans
+&kp ESC    &kp N1  &kp W  &kp N2    &kp N3  &kp N4       &none  &none  &none  &none  &none  &none
+&kp LSHFT  &kp A   &kp S  &kp D     &kp N5  &kp N6       &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kt Q   &kt W  &kt E     &none   &none        &none  &none  &none  &none  &none  &none
+                          &kp LALT  &trans  &kp SPACE    &none  &none  &none
             >;
 
             label = "g2";
