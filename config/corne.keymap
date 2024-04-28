@@ -18,6 +18,15 @@
         };
     };
 
+    macros {
+        pwd: pwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(G) &kp E &kp R &kp N4 &kp L &kp T &kp N0 &kp F &kp LS(R) &kp N1 &kp V &kp N1 &kp N4>;
+            label = "PWD";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -59,17 +68,17 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC           &kp EXCLAMATION  &kp AT_SIGN    &kp HASH            &kp DOLLAR            &kp PERCENT              &kp PLUS   &kp N7  &kp N8        &kp N9  &kp N0    &kp GRAVE
-&kp CAPSLOCK      &kp CARET        &kp AMPERSAND  &kp ASTERISK        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS  &kp N4  &kp N5        &kp N6  &kp LBKT  &kp RBKT
-&kp LEFT_CONTROL  &trans           &trans         &trans              &trans                &trans                   &kp EQUAL  &kp N1  &kp N2        &kp N3  &kp FSLH  &kp BSLH
-                                                  &mt LEFT_ALT ENTER  &lt 3 BACKSPACE       &kp SPACE                &kp RET    &trans  &kp LEFT_WIN
+&kp ESC           &kp N1            &kp N2            &kp N3              &kp N4            &kp N5              &kp N6            &kp N7            &kp N8            &kp N9            &kp N0            &kp GRAVE
+&kp CAPSLOCK      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)    &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp LS(GRAVE)
+&kp LEFT_CONTROL  &trans            &trans            &trans              &trans            &trans              &trans            &trans            &trans            &trans            &trans            &trans
+                                                      &mt LEFT_ALT ENTER  &lt 3 BACKSPACE   &kp SPACE           &kp RET           &trans            &kp LEFT_WIN
             >;
         };
 
         functional {
             bindings = <
 &kp F1             &kp F2           &kp F3           &kp F4               &kp F5         &kp F6        &kp F7         &kp F8   &kp F9         &kp F10      &kp F11     &kp F12
-&kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE       &kp C_PLAY_PAUSE     &kp C_STOP     &trans        &kp C_AC_HOME  &kp END  &kp PAGE_DOWN  &kp PAGE_UP  &kp INSERT  &trans
+&kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE       &kp C_PLAY_PAUSE     &kp C_STOP     &pwd          &kp C_AC_HOME  &kp END  &kp PAGE_DOWN  &kp PAGE_UP  &kp INSERT  &trans
 &kp LA(LC(DEL))    &kp LC(LS(ESC))  &kp PRINTSCREEN  &kp LA(PRINTSCREEN)  &kp LG(LS(S))  &kp LA(F4)    &trans         &trans   &bt BT_PRV     &bt BT_NXT   &bt BT_CLR  &bt BT_CLR_ALL
                                                      &trans               &trans         &trans        &trans         &trans   &trans
             >;
