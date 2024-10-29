@@ -38,10 +38,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E               &kp R            &kp T        &kp Y    &kp U         &kp I         &kp O    &kp P     &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D               &kp F            &kp G        &kp H    &kp J         &kp K         &kp L    &kp SEMI  &mt RIGHT_SHIFT SINGLE_QUOTE
-&kp LCTRL       &kp Z  &kp X  &kp C               &kp V            &kp B        &kp N    &kp M         &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                              &mt LEFT_ALT ENTER  &lt 1 BACKSPACE  &kp SPACE    &kp RET  &lt 2 DELETE  &kp LEFT_WIN
+&kp TAB         &kp Q  &kp W  &kp E                &kp R            &kp T        &kp Y    &kp U         &kp I         &kp O    &kp P     &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D                &kp F            &kp G        &kp H    &kp J         &kp K         &kp L    &kp SEMI  &mt RIGHT_SHIFT SINGLE_QUOTE
+&kp LCTRL       &kp Z  &kp X  &kp C                &kp V            &kp B        &kp N    &kp M         &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
+                              &mt LEFT_ALT DELETE  &lt 1 BACKSPACE  &kp SPACE    &kp RET  &lt 2 DELETE  &kp LEFT_WIN
             >;
         };
 
@@ -53,10 +53,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC         &kp LS(LC(LEFT_ARROW))  &kp UP          &kp LS(LC(RIGHT_ARROW))  &kp PAGE_DOWN  &kp PAGE_UP    &kp MINUS              &kp UNDERSCORE   &kp EQUAL          &kp PLUS          &kp EXCLAMATION  &kp TILDE
-&kp LEFT_SHIFT  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp BACKSPACE  &kp DELETE     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LESS_THAN     &kp COLON        &kp AMPERSAND
-&kp LCTRL       &kp LC(Z)               &kp LC(X)       &kp LC(C)                &kp LC(V)      &kp LC(Y)      &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp QUESTION     &kp PIPE
-                                                        &mt LEFT_ALT ENTER       &trans         &kp SPACE      &kp RET                &lt 3 DELETE     &kp LEFT_GUI
+&kp ESC         &kp N1          &kp N2          &kp N3              &kp N4     &kp N5       &kp N6   &kp N7        &kp N8        &kp N9   &kp N0   &kp TILDE
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP              &kp RIGHT  &kp DOT      &kp DOT  &kp DOT       &kp DOT       &kp DOT  &kp DOT  &kp DOT
+&kp LCTRL       &kp LC(Z)       &kp DOT         &kp DOT             &kp DOT    &kp LC(Y)    &kp DOT  &kp DOT       &kp DOT       &kp DOT  &kp DOT  &kp DOT
+                                                &mt LEFT_ALT ENTER  &trans     &kp SPACE    &kp RET  &lt 3 DELETE  &kp LEFT_GUI
             >;
         };
 
@@ -68,10 +68,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC           &kp N1            &kp N2            &kp N3              &kp N4            &kp N5              &kp N6            &kp N7            &kp N8            &kp N9            &kp N0            &kp GRAVE
-&kp CAPSLOCK      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)    &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp LS(GRAVE)
-&kp LEFT_CONTROL  &trans            &trans            &trans              &trans            &trans              &trans            &trans            &trans            &trans            &trans            &trans
-                                                      &mt LEFT_ALT ENTER  &lt 3 BACKSPACE   &kp SPACE           &kp RET           &trans            &kp LEFT_WIN
+&kp DOT  &kp DOT     &kp DOT   &kp DOT       &kp LS(COLON)  &kp LS(QMARK)    &kp FSLH   &kp DOT       &kp DOT       &kp DOT   &kp DOT     &kp DOT
+&kp DOT  &kp DOT     &kp DOT   &kp DOT       &kp LS(PIPE)   &kp LS(AMPS)     &kp DOT    &kp DOT       &kp DOT       &kp DOT   &kp DOT     &kp DOT
+&kp DOT  &kp LS(LT)  &kp LBKT  &kp LS(LBRC)  &kp LS(LPAR)   &kp DOT          &kp DOT    &kp LS(RPAR)  &kp LS(RBRC)  &kp RBKT  &kp LS(GT)  &kp DOT
+                               &kp DEL       &kp BSPC       &kp SPACE        &kp ENTER  &kp DOT       &kp LGUI
             >;
         };
 
