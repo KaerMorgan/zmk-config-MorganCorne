@@ -9,7 +9,14 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <36 38>;
+        };
+    };
 
     macros {
         pwd: pwd {
@@ -17,6 +24,13 @@
             #binding-cells = <0>;
             bindings = <&kp LS(G) &kp E &kp R &kp N4 &kp L &kp T &kp N0 &kp F &kp LS(R) &kp N1 &kp V &kp N1 &kp N4>;
             label = "PWD";
+        };
+
+        zepp: zepp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp N3 &kp LS(G) &kp N0 &kp N1 &kp N &kp G &kp LS(D) &kp N0 &kp W &kp N &kp LS(N) &kp N0 &kp W &kp EXCL>;
+            label = "ZEPP";
         };
     };
 
@@ -59,10 +73,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC  &kp N1          &kp N2            &kp N3          &kp N4                &kp N5    &kp N6  &kp N7                 &kp N8           &kp N9             &kp N0            &kp TILDE
-&trans   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP          &kp RIGHT             &trans    &trans  &kp HOME               &kp PAGE_DOWN    &kp PG_UP          &kp END           &trans
-&trans   &kp LESS_THAN   &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &trans    &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
-                                           &trans          &trans                &trans    &trans  &mo 3                  &trans
+&kp ESC  &kp N1                       &kp N2                   &kp N3                   &kp N4                    &kp N5    &kp N6  &kp N7                 &kp N8                   &kp N9                   &kp N0                 &kp TILDE
+&trans   &ht LEFT_CONTROL LEFT_ARROW  &ht LEFT_ALT DOWN_ARROW  &ht LEFT_SHIFT UP_ARROW  &ht LEFT_GUI RIGHT_ARROW  &trans    &trans  &ht RGUI HOME          &ht RIGHT_SHIFT PAGE_UP  &ht RIGHT_ALT PAGE_DOWN  &ht RIGHT_CONTROL END  &trans
+&trans   &kp LESS_THAN                &kp LEFT_BRACKET         &kp LEFT_BRACE           &kp LEFT_PARENTHESIS      &trans    &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE          &kp RIGHT_BRACKET        &kp GREATER_THAN       &trans
+                                                               &trans                   &trans                    &trans    &trans  &lt 3 DELETE           &trans
             >;
         };
 
@@ -74,17 +88,17 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC  &kp N1         &kp N2          &kp N3          &kp N4                &kp N5    &kp N6  &kp N7                 &kp N8           &kp N9         &kp N0            &kp GRAVE
-&trans   &kp PLUS       &kp UNDERSCORE  &kp EQUAL       &kp MINUS             &trans    &trans  &kp QUESTION           &kp COLON        &kp AMPERSAND  &kp PIPE          &trans
-&trans   &kp LESS_THAN  &kp LBKT        &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &trans    &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT       &kp GREATER_THAN  &trans
-                                        &trans          &mo 3                 &trans    &trans  &trans                 &trans
+&kp ESC  &kp N1                 &kp N2                   &kp N3                &kp N4                &kp N5    &kp N6  &kp N7                  &kp N8                 &kp N9                   &kp N0                  &kp GRAVE
+&trans   &ht LEFT_CONTROL PLUS  &ht LEFT_ALT UNDERSCORE  &ht LEFT_SHIFT EQUAL  &ht LEFT_GUI MINUS    &trans    &trans  &ht RIGHT_GUI QUESTION  &ht RIGHT_SHIFT COLON  &ht RIGHT_ALT AMPERSAND  &ht RIGHT_CONTROL PIPE  &trans
+&trans   &kp LESS_THAN          &kp LBKT                 &kp LEFT_BRACE        &kp LEFT_PARENTHESIS  &trans    &trans  &kp RIGHT_PARENTHESIS   &kp RIGHT_BRACE        &kp RBKT                 &kp GREATER_THAN        &trans
+                                                         &trans                &lt 3 BACKSPACE       &trans    &trans  &trans                  &trans
             >;
         };
 
         functional {
             bindings = <
 &kp F1  &kp F2  &kp F3      &kp F4             &kp F5           &kp F6    &kp F7  &kp F8      &kp F9      &kp F10     &kp F11         &kp F12
-&trans  &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &pwd      &trans  &trans      &trans      &trans      &trans          &trans
+&trans  &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &pwd      &zepp   &trans      &trans      &trans      &trans          &trans
 &trans  &trans  &trans      &trans             &trans           &trans    &trans  &bt BT_NXT  &bt BT_PRV  &bt BT_CLR  &bt BT_CLR_ALL  &trans
                             &trans             &trans           &trans    &trans  &trans      &trans
             >;
