@@ -69,7 +69,7 @@
                                                   &kp LEFT_ALT      &lt 1 BACKSPACE     &kp SPACE    &kp RET  &lt 2 DELETE         &kp RIGHT_GUI
             >;
 
-            label = "🏠";
+            label = "HOME 🏠︎";
         };
 
         lower_layer {
@@ -86,7 +86,7 @@
                                                          &trans                     &trans                        &trans    &trans  &lt 3 DELETE           &trans
             >;
 
-            label = "⬇️";
+            label = "DOWN ↓";
         };
 
         raise_layer {
@@ -103,7 +103,7 @@
                                                 &trans                     &lt 3 BACKSPACE         &trans    &trans  &trans                      &trans
             >;
 
-            label = "⬆️";
+            label = "UP ↑";
         };
 
         functional {
@@ -114,7 +114,7 @@
                             &trans             &trans           &trans    &trans  &trans      &trans
             >;
 
-            label = "🛠️";
+            label = "FN";
         };
 
         gaming {
@@ -125,18 +125,18 @@
                                 &kp LEFT_ALT  &lt 5 BACKSPACE  &kp SPACE    &kp RET  &lt 5 DELETE  &kp RIGHT_GUI
             >;
 
-            label = "🎮";
+            label = "GAME";
         };
 
         raise_gaming {
             bindings = <
-&kp ESC    &kp N1  &trans  &kp N2  &kp N3  &kp N4    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans  &kp N5  &kp N6    &trans  &trans  &trans  &trans  &trans  &trans
-&kp GRAVE  &kp Y   &kp H   &kp N   &kp I   &kp M     &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans    &trans  &trans  &trans
+&kp GRAVE  &kp N1  &trans  &kp N2  &kp N3  &kp N4        &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp GRAVE
+&trans     &trans  &trans  &trans  &kp N5  &kp N6        &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp Y   &kp H   &kp N   &kp I   &kp M         &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &kp ESCAPE    &trans  &trans  &trans
             >;
 
-            label = "🎮⬇️";
+            label = "GAME 🏠︎";
         };
     };
 };
