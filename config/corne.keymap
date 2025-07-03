@@ -69,7 +69,7 @@
                                                   &kp LEFT_ALT      &lt 1 BACKSPACE     &kp SPACE    &kp RET  &lt 2 DELETE         &kp RIGHT_GUI
             >;
 
-            label = "HOME 🏠︎";
+            label = "HOME ";
         };
 
         lower_layer {
@@ -86,7 +86,7 @@
                                                          &trans                     &trans                        &trans    &trans  &lt 3 DELETE           &trans
             >;
 
-            label = "DOWN ↓";
+            label = "DOWN ";
         };
 
         raise_layer {
@@ -103,7 +103,7 @@
                                                 &trans                     &lt 3 BACKSPACE         &trans    &trans  &trans                      &trans
             >;
 
-            label = "UP ↑";
+            label = "UP ";
         };
 
         functional {
@@ -130,13 +130,13 @@
 
         raise_gaming {
             bindings = <
-&kp GRAVE  &kp N1  &trans  &kp N2  &kp N3  &kp N4        &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp GRAVE
-&trans     &trans  &trans  &trans  &kp N5  &kp N6        &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp Y   &kp H   &kp N   &kp I   &kp M         &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &kp ESCAPE    &trans  &trans  &trans
+&kp ESCAPE  &kp N1  &trans  &kp N2  &kp N3  &kp N4    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp GRAVE
+&trans      &trans  &trans  &trans  &kp N5  &kp N6    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp Y   &kp H   &kp N   &kp I   &kp M     &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "GAME 🏠︎";
+            label = "GAME 2";
         };
     };
 };
